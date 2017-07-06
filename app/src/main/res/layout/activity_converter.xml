@@ -18,25 +18,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="100dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cel"
-            android:paddingLeft="15dp"
-            android:textSize="30sp"/>
+            android:padding="20dp"
+            style="@style/converterUI"
+            android:textSize="30sp"
+            android:contextClickable="false"/>
 
-        <EditText
+        <TextView
             android:layout_width="200dp"
-            android:layout_height="90dp"
+            android:layout_height="wrap_content"
             android:contextClickable="false"
             android:cursorVisible="true"
             android:id="@+id/ConverterUpView"
             android:editable="false"
             android:padding="0dp"/>
-        <EditText
+        <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="c"
+            style="@style/converterUI"
+            android:contextClickable="false"
             android:textSize="30sp"/>
 
 
@@ -49,25 +53,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:layout_width="100dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  Fah"
-            android:paddingLeft="0dp"
-            android:textSize="30sp"/>
+            android:text="Fah"
+            android:padding="20dp"
+            style="@style/converterUI"
+            android:textSize="30sp"
+            android:contextClickable="false"/>
 
-        <EditText
+        <TextView
             android:layout_width="200dp"
-            android:layout_height="90dp"
+            android:layout_height="wrap_content"
             android:contextClickable="false"
             android:cursorVisible="true"
             android:id="@+id/ConverterDownView"
             android:editable="false"
             android:padding="0dp"/>
-        <EditText
+        <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="f"
+            style="@style/converterUI"
+            android:contextClickable="false"
             android:textSize="30sp"/>
 
 
@@ -75,19 +83,23 @@
 
     </LinearLayout>
 
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@id/activity_more_units">
-
-
+        android:id="@+id/units">
 
 
     </FrameLayout>
 
 
-
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -215,11 +227,12 @@
             android:text="Units"
             android:inputType="none"
             android:textSize="20sp"
-            android:id="@+id/BasicEqualsButton"/>
+            android:id="@+id/Units"/>
 
+
+        </LinearLayout>
 
     </LinearLayout>
-
 
 
 
