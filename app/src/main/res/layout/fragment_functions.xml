@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+
+    <Button
+        android:text="\u21D0"
+        android:layout_width="180dp"
+        android:background="#E5F25E"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/backToFunctions"
+        android:onClick="backToFunctions"
+        />
+    <Button
+        android:text="Constants"
+        android:layout_width="180dp"
+        android:textAlignment="center"
+        android:background="#C1F45A"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:id="@+id/constantButton"/>
+
+
+</LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/moreFunction"
+   >
+
+<LinearLayout
+    android:id="@+id/content_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="myapplication.risenapps.com.studentutility.MainActivity"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="sinh"
+            android:layout_width="70dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/SinhButton"/>
+        <Button
+            android:text="cosh"
+            android:layout_width="70dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/coshButton"/>
+        <Button
+            android:text="tanh"
+            android:layout_width="70dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/tanhButton"/>
+        <Button
+            android:layout_width="70dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnButton"
+            android:textAllCaps="false"
+            android:text="ln"/>
+        <Button
+            android:text="log\u2093"
+            android:textAllCaps="false"
+            android:layout_width="70dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/logXButton"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="sin\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/SinInverseButton"/>
+        <Button
+            android:text="cos\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/CosInverseButton"/>
+        <Button
+            android:text="tan\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/TanInverseButton"/>
+        <Button
+            android:text="rand"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/RandomButton"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="sinh\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/SinhInverseButton"/>
+        <Button
+            android:text="cosh\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:id="@+id/CoshInverseButton"/>
+        <Button
+            android:text="tanh\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/TanhInverseButton"/>
+        <Button
+            android:text="x\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/XnegPower1Button"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="\u207F\u221A"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/nthRootButton"/>
+        <Button
+            android:text="\u221B"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/cubeRootButton"/>
+        <Button
+            android:text="\u221C"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/fourthRootButton"/>
+        <Button
+            android:text="X\u00B3"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/x2Power3Button"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="sec"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/secButton"/>
+        <Button
+            android:text="cosec"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/cosecButton"/>
+        <Button
+            android:text="cot"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/cotButton"/>
+        <Button
+            android:text="mod"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/modButton"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="sec\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/secInverse1Button"/>
+        <Button
+            android:text="cosec\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:id="@+id/cosInverse1Button"/>
+        <Button
+            android:text="cot\u207B\u00B9"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/cotInverse1Button"/>
+        <Button
+            android:text="e"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/exponentButton"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="\u03C0"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/piButton"/>
+        <Button
+            android:text="%"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/percentageButton"/>
+        <Button
+            android:text="x10\u207F"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/x10nButton"/>
+        <Button
+            android:text="e\u207F"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/exponentNButton"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="2\u207F"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/twoPowerNButton"/>
+        <Button
+            android:text="8\u207F"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/eightPowerNButton"/>
+        <Button
+            android:text="10\u207F"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/enPowerNButton"/>
+        <Button
+            android:text="16\u207F"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/sixPowerNButton"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="bin"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/binButton"/>
+        <Button
+            android:text="oct"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/octButton"/>
+        <Button
+            android:text="hex"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/hexButton"/>
+        <Button
+            android:text="dec"
+            android:layout_width="90dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/decButton"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+ </LinearLayout>
+

@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="myapplication.risenapps.com.studentutility.MainActivity"
+      >
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="600"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        android:icon="@mipmap/ic_launcher"
+        />
+    <item android:id="@+id/scientific"
+        android:title="Scientific"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/basic"
+        android:title="Basic"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/converter"
+        android:title="Converter"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/timetable"
+        android:title="Timetable"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/constants"
+        android:title="constants"
+        android:orderInCategory="500"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        android:orderInCategory="700"
+        app:showAsAction="never"
+
+        />
+</menu>
