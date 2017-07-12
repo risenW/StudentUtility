@@ -1,20 +1,12 @@
 package myapplication.risenapps.com.studentutility;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -23,23 +15,10 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_main);
+        setContentView(R.layout.scientific_calculator);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);   //Sets the top tool bar
         setSupportActionBar(toolbar);
 
-
-        Button moreFunction = (Button)findViewById(R.id.functionButton);
-        moreFunction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                ft.add(R.id.functionFragment,new Functions());
-                ft.commit();
-
-
-            }
-        });
 
 
 
@@ -54,19 +33,6 @@ public class MainActivity extends AppCompatActivity  {
                // startActivityForResult(i, MainActivityCode);
 
             }
-    public void backToFunctions(View view){
-        Intent intentFunctions = new Intent(this,MainActivity.class);
-        startActivity(intentFunctions);
-
-
-
-
-    }
-
-
-
-
-
 
 
 

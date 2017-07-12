@@ -16,18 +16,6 @@ public class Converter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_converter); //Here it calls its xml file
 
-        Button units = (Button)findViewById(R.id.Units);
-        units.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                FragmentTransaction ft1 = getSupportFragmentManager().beginTransaction();
-                ft1.add(R.id.units,new unitsFragment());
-                ft1.commit();
-
-            }
-        });
-
 
 
     }
