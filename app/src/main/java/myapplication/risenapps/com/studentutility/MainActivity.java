@@ -7,32 +7,44 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity  {
 
-    //private static final int MainActivityCode = 7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.scientific_calculator);
+        setContentView(R.layout.homelayout);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);   //Sets the top tool bar
         setSupportActionBar(toolbar);
 
 
 
+    }
+
+    public void onClick(View view){
+
+        switch (view.getId()){
+
+            case R.id.launchSci:
+                Intent intent = new Intent(this,ScientificCalculator.class);
+                startActivity(intent);
+                break;
+            case R.id.launchBasic:
+                Intent intentBasic = new Intent(this,BasicCalculator.class);
+                startActivity(intentBasic);
+                break;
+
+        }
+
 
 
 
     }
-    //This method starts the Settings activity from the MainActivity
-     public void launchSettings(View view) {
 
-                Intent i = new Intent(this, Settings.class);
-                startActivity(i);
-               // startActivityForResult(i, MainActivityCode);
 
-            }
 
 
 
@@ -73,9 +85,12 @@ public class MainActivity extends AppCompatActivity  {
                 startActivity(intentTimeTable);
                 break;
             case R.id.converter:
-                Intent intentConverer = new Intent(this,Converter.class);
-                startActivity(intentConverer);
+                Intent intentConverter = new Intent(this,Converter.class);
+                startActivity(intentConverter);
                 break;
+            case R.id.scientific:
+                Intent intentScientific = new Intent(this,ScientificCalculator.class);
+                startActivity(intentScientific);
 
            default:
                return super.onOptionsItemSelected(item);
