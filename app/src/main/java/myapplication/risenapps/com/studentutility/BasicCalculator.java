@@ -1,11 +1,13 @@
 package myapplication.risenapps.com.studentutility;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.fathzer.soft.javaluator.DoubleEvaluator;
 
@@ -20,12 +22,13 @@ public class BasicCalculator extends AppCompatActivity {
     public String text = "";
     public Double result = 0.0;
     public int integerResult;
+    public ScientificCalculator mScientificCalculator;
     //private DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basic_calculator); //Here it calls the xml file for display
+        setContentView(R.layout.content_basic_calculator); //Here it calls the xml file for display
 
 
         e1 = (EditText) findViewById(R.id.BasictextViewUp);
@@ -189,8 +192,8 @@ public class BasicCalculator extends AppCompatActivity {
                         //coverts the result to integer if it ends with .0
 
 
-
-                        e2.setText(result + "");
+                        e2.setText(removeTrailingZero(result + "")); //calls the method from ScientificCalculator class to remove the ending Zero from an integer calculation
+                        //e2.setText(result + "");
 
 
 
@@ -209,6 +212,19 @@ public class BasicCalculator extends AppCompatActivity {
                 startActivity(i);
                 break; */
         }
+
+    }
+
+    public String removeTrailingZero(String formattingInput){
+        if(!formattingInput.contains(".")){
+            return formattingInput;
+        }
+        int dotPosition = formattingInput.indexOf(".");
+        String newValue = formattingInput.substring(dotPosition, formattingInput.length());
+        if(newValue.equals(".0")){
+            return formattingInput.substring(0, dotPosition);
+        }
+        return formattingInput;
     }
 
     private void operationClicked(String op) {
@@ -224,6 +240,57 @@ public class BasicCalculator extends AppCompatActivity {
                 e1.setText(newText);
             }
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        switch (id){
+            //Launches any of the Selected Activity from the drop down menu when clicked
+            case R.id.action_settings:
+                Intent intentSettings = new Intent(this,Settings.class);
+                startActivity(intentSettings);
+                break;
+            case R.id.scientific:
+                Intent intentSci = new Intent(this,ScientificCalculator.class);
+                startActivity(intentSci);
+                break;
+            case R.id.about:
+                Intent intentAbout = new Intent(this,About.class);
+                startActivity(intentAbout);
+                break;
+            case R.id.constants:
+                Intent intentConstants = new Intent(this,Constants.class);
+                startActivity(intentConstants);
+                break;
+            case R.id.timetable:
+                Intent intentTimeTable = new Intent(this,TimeTable.class);
+                startActivity(intentTimeTable);
+                break;
+            case R.id.converter:
+                Intent intentConverter = new Intent(this,UnitCoverter.class);
+                startActivity(intentConverter);
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
+
+
+        }
+        return true;
+
+
     }
 
 }

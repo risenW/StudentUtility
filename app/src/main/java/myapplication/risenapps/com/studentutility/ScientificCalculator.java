@@ -7,9 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 
 /**
@@ -33,8 +34,12 @@ public class ScientificCalculator extends AppCompatActivity implements View.OnCl
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.scientific_calculator); //Here it calls the xml file for display
+        setContentView(R.layout.content_scientific_calculator); //Here it calls the xml file for display
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         mCalculator = new Calculator();
@@ -533,7 +538,7 @@ public class ScientificCalculator extends AppCompatActivity implements View.OnCl
                 startActivity(intentTimeTable);
                 break;
             case R.id.converter:
-                Intent intentConverter = new Intent(this,Converter.class);
+                Intent intentConverter = new Intent(this,UnitCoverter.class);
                 startActivity(intentConverter);
                 break;
 

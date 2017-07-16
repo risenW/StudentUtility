@@ -26,9 +26,25 @@
             android:label="@string/title_activity_basic_calculator">
         </activity>
         <activity
-            android:name=".Converter"
-            android:label="@string/title_activity_converter">
-        </activity>
+            android:name=".UnitCoverter"
+            android:label="Unit Converter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitArea"
+            android:label="Area Conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitLength"
+            android:label="Length Conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitWeight"
+            android:label="Weight Conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitTemperature"
+            android:label="Temperature Conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TimeTable"
             android:label="@string/title_activity_time_table">

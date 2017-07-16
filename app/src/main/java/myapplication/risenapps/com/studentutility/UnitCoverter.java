@@ -1,5 +1,10 @@
 package myapplication.risenapps.com.studentutility;
 
+/**
+ * Created by Risen on 7/15/2017.
+ */
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,45 +13,40 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-
-public class MainActivity extends AppCompatActivity  {
-
+public class UnitCoverter extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);   //Sets the top tool bar
+        setContentView(R.layout.activity_converter);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
     }
 
-    public void onClick(View view){
-
-        switch (view.getId()){
-
-            case R.id.launchSci:
-                Intent intent = new Intent(this,ScientificCalculator.class);
-                startActivity(intent);
+    public void onClick(View v)
+    {
+        Intent i;
+        switch(v.getId())
+        {
+            case R.id.area:
+                i=new Intent(this,UnitArea.class);
+                startActivity(i);
                 break;
-            case R.id.launchBasic:
-                Intent intentBasic = new Intent(this,BasicCalculator.class);
-                startActivity(intentBasic);
+            case R.id.length:
+                i=new Intent(this,UnitLength.class);
+                startActivity(i);
                 break;
-
+            case R.id.weight:
+                i=new Intent(this,UnitWeight.class);
+                startActivity(i);
+                break;
+            case R.id.tempearture:
+                i=new Intent(this,UnitTemperature.class);
+                startActivity(i);
+                break;
         }
-
-
-
-
     }
-
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -83,16 +83,9 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intentTimeTable = new Intent(this,TimeTable.class);
                 startActivity(intentTimeTable);
                 break;
-            case R.id.converter:
-                Intent intentConverter = new Intent(this,UnitCoverter.class);
-                startActivity(intentConverter);
-                break;
-            case R.id.scientific:
-                Intent intentScientific = new Intent(this,ScientificCalculator.class);
-                startActivity(intentScientific);
 
-           default:
-               return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
 
 
         }
@@ -100,4 +93,5 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+
 }
