@@ -16,6 +16,26 @@
    <string name="backspace">⌫</string>
    <string name="clear">C</string>
 
+    <string-array name="course_unit">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="course_grade">
+        <item>nil</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+
     <string-array name="area">
         <item>Sq. Millimeter</item>
         <item>Sq. Centimeter</item>
@@ -24,6 +44,7 @@
         <item>Acre</item>
         <item>Hectare</item>
     </string-array>
+
 
     <string-array name="length">
         <item>Nanometer</item>
@@ -56,4 +77,5 @@
 
     <!-- Strings for the units section in converter -->
     <string name="hello_blank_fragment">Celsius to Fahrenheit</string>
+    <string name="course_unit">1</string>
 </resources>

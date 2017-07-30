@@ -46,8 +46,9 @@
             android:label="Temperature Conversion"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TimeTable"
-            android:label="@string/title_activity_time_table">
+            android:name=".CgpaCalculator"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="CGPA Calculator">
         </activity>
         <activity
             android:name=".Constants"

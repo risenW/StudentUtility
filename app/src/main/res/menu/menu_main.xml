@@ -31,8 +31,8 @@
 
         />
     <item
-        android:id="@+id/timetable"
-        android:title="Timetable"
+        android:id="@+id/cgpaCalculator"
+        android:title="CGPA Calculator"
         android:orderInCategory="400"
         app:showAsAction="never"
 

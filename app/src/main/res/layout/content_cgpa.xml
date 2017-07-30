@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/firstRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/secondRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/thirdRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/fourthRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourthRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourthRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/fifthRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifthRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifthRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/sixthRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sixthRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sixthRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/seventhRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seventhRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seventhRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/eightRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eightRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eightRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/ninthRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ninthRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ninthRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/tenthRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenthRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenthRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/eleventhRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eleventhRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eleventhRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/twelfthRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twelfthRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twelfthRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/thirteenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirteenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirteenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/fourteenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourteenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourteenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/fifteenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifteenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifteenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/sixteenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sixteenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sixteenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/seventeenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seventeenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seventeenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/eighteenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eighteenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eighteenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/nineteenRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nineteenRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nineteenRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:textCursorDrawable="@android:id/background"
+            android:id="@+id/twentyRowCourse"
+            android:hint="CSC 101"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twentyRowSpinner1"
+            android:layout_weight="1"
+            android:entries="@array/course_unit"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twentyRowSpinner2"
+            android:layout_weight="1"
+            android:entries="@array/course_grade"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

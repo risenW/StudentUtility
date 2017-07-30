@@ -201,8 +201,8 @@ public class UnitTemperature extends AppCompatActivity {
                 Intent intentConstants = new Intent(this,Constants.class);
                 startActivity(intentConstants);
                 break;
-            case R.id.timetable:
-                Intent intentTimeTable = new Intent(this,TimeTable.class);
+            case R.id.cgpaCalculator:
+                Intent intentTimeTable = new Intent(this,CgpaCalculator.class);
                 startActivity(intentTimeTable);
                 break;
             case R.id.converter:

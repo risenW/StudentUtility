@@ -42,8 +42,8 @@ public class Constants extends Activity {
                 Intent intentAbout = new Intent(this,About.class);
                 startActivity(intentAbout);
                 break;
-            case R.id.timetable:
-                Intent intentTimeTable = new Intent(this,TimeTable.class);
+            case R.id.cgpaCalculator:
+                Intent intentTimeTable = new Intent(this,CgpaCalculator.class);
                 startActivity(intentTimeTable);
                 break;
             case R.id.converter:
